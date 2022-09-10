@@ -1,15 +1,15 @@
 #include <stdio.h>
 /**
-* main - Prints the alphabet at reverse
+* main - entry point
 *
-* Return: Always 0
+* Return: always 0
+*
 */
 int main(void)
 {
-char c;
-for (c = 'z'; c >= 'a'; c--)
-{
-putchar(c);
-}
+char a;
+for (a = 'z'; a >= 'a' ; a--)
+putchar(a);
 putchar('\n');
 return (0);
+}
