@@ -1,22 +1,16 @@
-/*
-* File: 101-natural.c
-* Auth: Brennan D Baraban
-*/
-#include <stdio.h>
+#include "main.h"
 /**
-* main - Lists all the natural numbers below 1024 (excluded)
-* that are multiples of 3 or 5.
+* print_alphabet - print alphabet
 *
-* Return: Always 0.
+* Return: void
 */
-int main(void)
+void print_alphabet(void)
 {
-int i, sum = 0;
-for (i = 0; i < 1024; i++)
+char letter = 'a';
+while (letter <= 'z')
 {
-if ((i % 3) == 0 || (i % 5) == 0)
-sum += i;
+_putchar(letter);
+letter++;
 }
-printf("%d\n", sum);
-return (0);
+_putchar('\n');
 }
